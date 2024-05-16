@@ -18,3 +18,7 @@ scrollDown.onclick = () => {
     });
     numS === lastChildItem.length - 1 ? scrollDown.classList.add("not-pointer") : numS++;
 };
+setInterval(()=>{
+
+     numS === lastChildItem.length - 1 ? scrollUp.click() : scrollDown.click();
+},1000)
